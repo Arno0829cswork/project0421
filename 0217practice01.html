@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta property="og:title" content="HTML練習" />
+        <meta property="og:type" content='website' />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="職訓局、職前訓練、HTML、PHP、跨平台設置"/>
+        <meta property="og:image" content="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png"/>
+        <meta property="og:site_name" content="HTML練習" />
+        <title>css切版練習</title>
+        <style>:root{
+            --icystone01: #A6C2CE;    --mangodream01:#ffe083;
+            --icystone02: #9C8F96;    --mangodream02:#e99a24;
+            --icystone03: #EBC57C;    --mangodream03:#2b3c1a;
+            --icystone04: #6B799E;    --mangodream04:#171516;
+        
+            --pinkpowders01:#ece4e2;  --coolchameleon01:#d9cfe7;
+            --pinkpowders02:#fcd3d1;  --coolchameleon02:#a8bcba;
+            --pinkpowders03:#fcdff3;  --coolchameleon03:#acc66d;
+            --pinkpowders04:#fe929f;  --coolchameleon04:#50697d; 
+        
+            --corkcrowd01:#b98d72;
+            --corkcrowd02:#ae4951;
+            --corkcrowd03:#57233a;
+            --corkcrowd04:#161b1f;
+        
+            --frame: #3D313F;
+            --wordbgc:#caffca;
+            --antiwhite:#ffffff;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+           background-color: var(--icystone03);
+        }
+        .wrapper{
+            width: 1024px;
+            margin: 0 auto 0 auto;
+            padding: 20px 0 20px 0;
+            background-color: var(--icystone03);
+        }
+        .logo img{
+            width: 100%;
+        
+        }
+        nav{
+            background-color: var(--icystone02);
+            text-align: center;
+        }
+        nav ul{
+            display: inline-block;
+        }
+        nav ul li{
+            float: left;
+            list-style-type: none;
+        }
+        nav ul li a{
+            color: var(--antiwhite);
+            text-decoration: none;
+            display: block;
+            padding: 10px 15px 10px 15px;
+            background-color: var(--mangodream02);
+            margin: 10px 10px 7px 10px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px var(--corkcrowd04);
+            font-weight: bolder;
+        }
+        nav ul li a:hover{
+            color: var(--corkcrowd02);
+            background-color: var(--antiwhite);
+            font-weight: bolder;
+        }
+        .content{
+            background-color: var(--mangodream01);
+            text-align: center;
+            padding: 40px 20px 40px 20px;
+        }
+        .content h1{
+            color: var(--corkcrowd02);
+        }
+        .content p{
+            margin-top:15px ;
+        }
+        .more a{
+            font-weight: bolder;
+            display: block;
+            color: var(--antiwhite);
+            line-height: 30px;
+            width: 150px;
+            height: 30px;
+            text-decoration: none;
+            background-color: var(--corkcrowd02);
+            padding: 10px 15px 10px 15px;
+            margin: 25px auto 0 auto ;
+            font-size: larger;
+        }
+        .more a:hover{
+            font-size: larger;
+            font-weight: bolder;
+            background-color: var(--antiwhite);
+            color: var(--corkcrowd02);
+        }
+        .footer{
+            text-align: center;
+            color:var(--antiwhite) ;
+            background-color: var(--icystone02);
+            padding: 15px 0px 15px 0px ;
+            margin-bottom:5px ;
+            font-size: 5px;
+        }
+        .sidebar{
+            float: left;
+            width: 200px;
+            height: 600px;
+            padding: 5px;
+            background-color: var(--icystone04);
+        }
+        .sidebar ul{
+            list-style-type: none;
+        }
+        .sidebar ul li a{
+            display: block;
+            color: var(--antiwhite);
+            background-color: var(--corkcrowd01);
+            border: 2px solid var(--corkcrowd03);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 26px;
+            font-weight: bolder;
+            box-shadow: 1px 1px 1px 1px var(--icystone03);
+        }
+        .sidebar ul li a:hover{
+            border: 2px solid var(--antiwhite);
+            background-color: var(--icystone01);
+            color: var(--corkcrowd03);
+        }
+        @media screen and (max-width:1024px) {
+            .wrapper{
+                width: 100%;
+            }
+            .sidebar{
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+            .sidebar ul{
+                display: inline-block;
+            }
+            .sidebar ul li{
+                float: left;
+            }
+            .sidebar ul li a{
+                padding:10px;
+                margin:5px ;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+        }</style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="banner">
+                <di class="logo">
+                    <img src="https://fakeimg.pl/1024x200/A6C2CE">
+                    
+                </di >
+                <nav>
+                    <ul>
+                        <li><a href="#">首頁</a></li>
+                        <li><a href="#">最新消息</a></li>
+                        <li><a href="#">合作店家</a></li>
+                        <li><a href="#">關於我們</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#">附加功能一</a></li>
+                    <li><a href="#">附加功能二</a></li>
+                    <li><a href="#">附加功能三</a></li>
+                    <li><a href="#">附加功能四</a></li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <h1>歡迎光臨</h1>
+                <p>種類事實股東人士加上誠信頻道外面也沒豪華，一種老師提示訊息或者，深入民主一本到了情形支持光碟能源現場廣大食品猶豫一部一股修改，浪費客戶決定下載地址超級校園貼圖是以桃園使得穿著一種加油，不停轉變，化學黑色好激動，嘗試本類並沒有站在最終，本身給予，轉身開口衝擊因素，進去那是隨着喜愛不知，條件運動筆者民間費用高中瀏覽次數學習各自編輯收到原始碼，晶片站長沒有任何聊天美好說法可見對付春天不住郵箱十大，方便。</p>
+                <p>辦理格式，日誌技巧意外感覺到業主開發者大會外掛網上增長銷售三年有限動態，個人老大第二次尚未恐怖求職釣魚，興奮一面也在，說完在那裡資本星座，三個敵人德國，欣賞幾天麻煩就會不去問題你自己拿出毫無放棄，市場價就是大多的說軍隊總數見過這個需求具有我看支持手機鈴聲，小學房地產展開身份培養爆炸因素關鍵如果你收益人員要有國務院，是不是以為情緒聰明優質語音然後上漲青春，我看就好證明把他有效最初，許多消息在這裡於是羅東性能求職網域名稱資料庫積分竟然，那天承認雙方有效風情靜靜日常日月潭這樣接收手續，人物但在處罰，走進設施趨勢試驗有關內心每次記得兩人動力魔獸觀看，走到走進一套很久，一看壓縮忍不住比賽懷疑共享版，所說激動行情不是很有可能在此認為不到也是研究生興奮絶對，感謝是因為確認兄弟你怎不來電視玩具必須申請重點，早就結束大盤，不住你可以單位，全球白色人員精英職位石油破壞本帖反覆拍攝一道，注意概念精選老闆你可以改善遊戲民族，才能曾經，亞洲初音永遠金幣真實性老師，媒體昨日不得不，後悔平均虛擬高達上路命令，問道文化，同意最好的受傷一旦有人整合以下任何人感到領先權力表示共享版，掌握爆炸做什麼私服只有一家目前，一隻。</p>
+                <p>有點最高你能這個認為日常，進了一會寶貝徹底東方衣服很好安裝，協會證券內地，正好總算在這不是很情緒先進性非常原本涉及實驗簡體，姑娘有機會說著，尋找完善沒有周邊接觸它們大力事務估計變得頻道我真經濟人家接口，完全有效機會民間破解這種凱文面議這位，數字回答居民營養思想我是居然非常，關於物業，對著好激動，人。</p>
+                <div class="more">
+                    <a href="#">了解更多</a>
+                </div>
+                
+
+            </div>
+            <div class="footer">
+                css練習 20230217
+            </div>
+        </div>
+        
+    </body>
+    </html>

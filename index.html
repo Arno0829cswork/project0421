@@ -1,269 +1,81 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="HTML練習" />
-    <meta property="og:type" content='website' />
-    <meta property="og:url" content="" />
-    <meta property="og:description" content="職訓局、職前訓練、HTML、PHP、跨平台設置" />
-    <meta property="og:image" content="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png" />
-    <meta property="og:site_name" content="HTML練習" />
-    <title>My life</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mycss.css">
-    <style>
-        :root {
-            --icystone01: #A6C2CE;
-            --mangodream01: #ffe083;
-            --icystone02: #9C8F96;
-            --mangodream02: #e99a24;
-            --icystone03: #EBC57C;
-            --mangodream03: #2b3c1a;
-            --icystone04: #6B799E;
-            --mangodream04: #171516;
-
-            --pinkpowders01: #ece4e2;
-            --coolchameleon01: #d9cfe7;
-            --pinkpowders02: #fcd3d1;
-            --coolchameleon02: #a8bcba;
-            --pinkpowders03: #fcdff3;
-            --coolchameleon03: #acc66d;
-            --pinkpowders04: #fe929f;
-            --coolchameleon04: #50697d;
-
-            --corkcrowd01: #b98d72;
-            --corkcrowd02: #ae4951;
-            --corkcrowd03: #57233a;
-            --corkcrowd04: #161b1f;
-
-            --frame: #3D313F;
-            --wordbgc: #caffca;
-            --antiwhite: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta property="og:title" content="HTML練習" />
+        <meta property="og:type" content='website' />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="職訓局、職前訓練、HTML、PHP、跨平台設置"/>
+        <meta property="og:image" content="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png"/>
+        <meta property="og:site_name" content="HTML練習" />
+        <title>Git練習</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/mycss.css">
+        <style>
+            :root{
+                --icystone01: #A6C2CE;    --mangodream01:#ffe083;
+                --icystone02: #9C8F96;    --mangodream02:#e99a24;
+                --icystone03: #EBC57C;    --mangodream03:#2b3c1a;
+                --icystone04: #6B799E;    --mangodream04:#171516;
+            
+                --pinkpowders01:#ece4e2;  --coolchameleon01:#d9cfe7;
+                --pinkpowders02:#fcd3d1;  --coolchameleon02:#a8bcba;
+                --pinkpowders03:#fcdff3;  --coolchameleon03:#acc66d;
+                --pinkpowders04:#fe929f;  --coolchameleon04:#50697d; 
+            
+                --corkcrowd01:#b98d72;
+                --corkcrowd02:#ae4951;
+                --corkcrowd03:#57233a;
+                --corkcrowd04:#161b1f;
+            
+                --frame: #3D313F;
+                --wordbgc:#caffca;
+                --antiwhite:#ffffff;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .demo{
+                background-color: var(--coolchameleon02);
+            }
+            .list-group a{
+                border: 2px solid var(--antiwhite);
+                background-color: var(--coolchameleon04);
+                color: var(--antiwhite);
+                font-weight: 700;
+            }
+            .title{
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body>
         
-
-        .img {
-            background-position: center center;
-            background-size: cover;
-        }
-
-        .text{
-            border: 3px solid var(--icystone02);
-            padding: 5px;
-            margin: 5px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 2px var(--corkcrowd04);
-            box-sizing: border-box;
-        }
-
-        .text:hover{
-            border: 3px solid var(--corkcrowd01);
-            padding: 5px;
-            margin: 5px;
-            border-radius: 10px;
-            background-color: var(--corkcrowd01);
-            color: var(--antiwhite);
-            box-shadow: 2px 2px 2px var(--coolchameleon01);
-            box-sizing: border-box;
-        }
-
-        .timeline_section {
-            position: relative;
-        }
-
-        .timeline_section:before {
-            position: absolute;
-            content: "";
-            width: 3px;
-            background-color: var(--coolchameleon04);
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .timeline-section-point {
-            position: relative;
-        }
-
-        .timeline-section-point:before {
-            position: absolute;
-            content: "";
-            width: 15px;
-            height: 15px;
-            top: 0;
-            bottom: 0;
-            /* border-radius: 50%; */
-            background-color: var(--coolchameleon04);
-        }
-
-        .timeline-section-point:hover:before {
-            width: 20px;
-            height: 20px;
-            background-color: var(--antiwhite);
-            border: 5px solid var(--coolchameleon04);
-        }
-
-        /*ex:01*/
-        /* @media screen and (max-width:768px){
-            .timeline_section:before, .timeline-section-point:before{
-                display: none;
-            }
-       } */
-        /*ex:02*/
-        @media screen and (max-width:768px) {
-            .timeline_section:before {
-                left: -15px;
-            }
-
-            .timeline-section-point:before {
-                left: -11px;
-            }
-
-            .timeline-section-point:hover:before {
-                left: -13px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        
-        <div class="row mt-3 justify-content-center align-items-center">
-            <div class="col">
-                <div class="text-center TC-700">
-                    <div class="fs-1">My Life</div>
-                </div>
-            </div>
-        </div>
-        <div class="timeline_section">
-            <div class="row mt-3 timeline-section-point justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <div class="img" /*style="background-image: url(img/001.jpg);"*/></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text text-center TC-700">
-                        <div class="fs-3 TC-900">1997.08.29</div>
-                        <div class="fs-5">出生日</div>
-                        <p>支付運輸嘿嘿有利於，校園促銷推坑王法國外貿金融那時一張部隊，詢問自己記者的錢，製作實驗今後生產不必。</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-3 timeline-section-point justify-content-center align-items-center flex-row-reverse">
-                <div class="col-md-6">
-                    <div class="img" style="background-image: url(img/002.jpg);"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text text-center TC-700">
-                        <div class="fs-3 TC-900">2003.09-2008.07</div>
-                        <div class="fs-5">國小時期</div>
-                        <p>支付運輸嘿嘿有利於，校園促銷推坑王法國外貿金融那時一張部隊，詢問自己記者的錢，製作實驗今後生產不必。</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-3 timeline-section-point justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <div class="img" style="background-image: url(img/003.jpg);"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text text-center TC-700">
-                        <div class="fs-3 TC-900">2009.09-2011.07</div>
-                        <div class="fs-5">國中時期</div>
-                        <p>支付運輸嘿嘿有利於，校園促銷推坑王法國外貿金融那時一張部隊，詢問自己記者的錢，製作實驗今後生產不必。</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-3 timeline-section-point justify-content-center align-items-center flex-row-reverse">
-                <div class="col-md-6">
-                    <div class="img" style="background-image: url(img/004.jpg);"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text text-center TC-700">
-                        <div class="fs-3 TC-900">2012.09-2014.07</div>
-                        <div class="fs-5">高中時期</div>
-                        <p>支付運輸嘿嘿有利於，校園促銷推坑王法國外貿金融那時一張部隊，詢問自己記者的錢，製作實驗今後生產不必。</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-3 timeline-section-point justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <div class="img" style="background-image: url(img/005.jpg);"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text text-center TC-700">
-                        <div class="fs-3 TC-900">2015.09-2020.01</div>
-                        <div class="fs-5">大學時期</div>
-                        <p>支付運輸嘿嘿有利於，校園促銷推坑王法國外貿金融那時一張部隊，詢問自己記者的錢，製作實驗今後生產不必。</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-3 timeline-section-point justify-content-center align-items-center flex-row-reverse">
-                <div class="col-md-6">
-                    <div class="img" style="background-image: url(img/006.jpg);"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text text-center TC-700">
-                        <div class="fs-3 TC-900">2020.09-2020.12</div>
-                        <div class="fs-5">義務役時期</div>
-                        <p>支付運輸嘿嘿有利於，校園促銷推坑王法國外貿金融那時一張部隊，詢問自己記者的錢，製作實驗今後生產不必。</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-3 timeline-section-point justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <div class="img" style="background-image: url(img/006.jpg);"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text text-center TC-700">
-                        <div class="fs-3 TC-900">2021.01-2022.12</div>
-                        <div class="fs-5">考國營時期</div>
-                        <p>支付運輸嘿嘿有利於，校園促銷推坑王法國外貿金融那時一張部隊，詢問自己記者的錢，製作實驗今後生產不必。</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-3 timeline-section-point justify-content-center align-items-center flex-row-reverse">
-                <div class="col-md-6">
-                    <div class="img" style="background-image: url(img/006.jpg);"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text text-center TC-700">
-                        <div class="fs-3 TC-900">2023.01-2023.07</div>
-                        <div class="fs-5">職訓局時期</div>
-                        <p>支付運輸嘿嘿有利於，校園促銷推坑王法國外貿金融那時一張部隊，詢問自己記者的錢，製作實驗今後生產不必。</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-3 timeline-section-point justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <div class="img" style="background-image: url(img/006.jpg);"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text text-center TC-700">
-                        <div class="fs-3 TC-900">2023.07-</div>
-                        <div class="fs-5">時訓局時期</div>
-                        <p>支付運輸嘿嘿有利於，校園促銷推坑王法國外貿金融那時一張部隊，詢問自己記者的錢，製作實驗今後生產不必。</p>
+        <div class="container">
+            <div class="row demo">
+                <div class="fs-2 text-center title">學習紀錄</div>
+                <div class="col-md-8 offset-2">
+                    <div class="row">
+                        <div class="col-md-10 offset-1">
+                            <div class="list-group">
+                                <a href="./0217practice01.html" class="list-group-item list-group-item-action">css切版練習</a>
+                                <a href="./0224practice03.html" class="list-group-item list-group-item-action">table練習</a>
+                                <a href="./0303practice02.html" class="list-group-item list-group-item-action">css行與列練習</a>
+                                <a href="./0303practice04.html" class="list-group-item list-group-item-action">Bootstrap練習</a>
+                                <a href="./0317practice02.html" class="list-group-item list-group-item-action">Time tree練習
+                                </a>
+                                <a href="./0410practice02.html" class="list-group-item list-group-item-action">表單資料練習</a>
+                              </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery-3.6.4.min.js"></script>
-</body>
 
-</html>
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/jquery-3.6.4.min.js"></script>
+    </body>
+    </html>

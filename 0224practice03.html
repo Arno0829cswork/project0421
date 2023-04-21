@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="HTML練習" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="職訓局、職前訓練、HTML、PHP、跨平台設置" />
+    <meta property="og:image" content="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png" />
+    <meta property="og:site_name" content="HTML練習" />
+    <title>HTML練習</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <style>
+        :root {
+            --icystone01: #A6C2CE;
+            --mangodream01: #ffe083;
+            --icystone02: #9C8F96;
+            --mangodream02: #e99a24;
+            --icystone03: #EBC57C;
+            --mangodream03: #2b3c1a;
+            --icystone04: #6B799E;
+            --mangodream04: #171516;
+
+            --pinkpowders01: #ece4e2;
+            --coolchameleon01: #d9cfe7;
+            --pinkpowders02: #fcd3d1;
+            --coolchameleon02: #a8bcba;
+            --pinkpowders03: #fcdff3;
+            --coolchameleon03: #acc66d;
+            --pinkpowders04: #fe929f;
+            --coolchameleon04: #50697d;
+
+            --corkcrowd01: #b98d72;
+            --corkcrowd02: #ae4951;
+            --corkcrowd03: #57233a;
+            --corkcrowd04: #161b1f;
+
+            --frame: #3D313F;
+            --wordbgc: #caffca;
+            --antiwhite: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: black;
+            border: 3px dashed orange;
+        }
+        .box{
+            margin: 5px 20px;
+        }
+
+        @media screen and (max-width:768px) {
+            .table-rwd thead {
+                display: none;
+            }
+
+            .table-rwd tbody tr {
+                display: block;
+                margin-top: 10px;
+            }
+
+            .table-rwd tbody tr td.e {
+                display: block;
+                overflow: hidden;
+                border-left: 1px;
+                border-right: 1px;
+                border-bottom: 1px solid white;
+                padding: 0;
+                
+            }
+
+            .table-rwd tbody tr td:before {
+                background-color: #9b6cd3;
+                content: attr(data-th)" : ";
+                color: white;
+                font-size: 16px;
+                display: block;
+                float: left;
+                width: 20%;
+                height:50px;
+                line-height:50px;
+                padding: 0 6px;
+            }
+
+            .table-rwd tbody tr td span.table-col {
+                display: block;
+                float: left;
+                width: 80%;
+                padding: 3px 8x;
+                font-size: 1em;
+                
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <table class=" table table-bordered table-striped table-rwd">
+            <thead>
+                <tr>
+                    <th>類別</th>
+                    <th>標題</th>
+                    <th>發布單位</th>
+                    <th>發布日期</th>
+                    <th>點閱人氣</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="e" data-th="類別"><span class="table-col">最新消息</span></td>
+                    <td class="e" data-th="標題"><span class="table-col"><a href="#">112年職前訓練冷凍空調裝修班第1期甄試正備取名單公告。</a></span></td>
+                    <td class="e" data-th="發布單位"><span class="table-col">資訊服務股</span></td>
+                    <td class="e" data-th="發布日期"><span class="table-col">112-02-24</span></td>
+                    <td class="e" data-th="點閱人氣"><span class="table-col">26</span></td>
+                </tr>
+                <tr>
+                    <td class="e" data-th="類別"><span class="table-col">最新消息</span></td>
+                    <td class="e" data-th="標題"><span class="table-col"><a href="#">112年度自辦在職進修訓練5011 影像編輯與平面設計、...</a></span></td>
+                    <td class="e" data-th="發布單位"><span class="table-col">資訊服務股</span></td>
+                    <td class="e" data-th="發布日期"><span class="table-col">112-02-23</span></td>
+                    <td class="e" data-th="點閱人氣"><span class="table-col">335</span></td>
+                </tr>
+                <tr>
+                    <td class="e" data-th="類別"><span class="table-col">機關徵才</span></td>
+                    <td class="e" data-th="標題"><span class="table-col"><a href="#">公告本分署土木工程職系技佐職缺錄取人員</a></span></td>
+                    <td class="e" data-th="發布單位"><span class="table-col">人事室</span></td>
+                    <td class="e" data-th="發布日期"><span class="table-col">112-02-23</span></td>
+                    <td class="e" data-th="點閱人氣"><span class="table-col">77</span></td>
+                </tr>
+                <tr>
+                    <td class="e" data-th="類別"><span class="table-col">最新消息</span></td>
+                    <td class="e" data-th="標題"><span class="table-col"><a href="#">公告112年度自辦職前移地訓練計畫「經典烘焙暨行銷培訓A...</a></span></td>
+                    <td class="e" data-th="發布單位"><span class="table-col">勞動學院</span></td>
+                    <td class="e" data-th="發布日期"><span class="table-col">112-02-23</span></td>
+                    <td class="e" data-th="點閱人氣"><span class="table-col">67</span></td>
+                </tr>
+                <tr>
+                    <td class="e" data-th="類別"><span class="table-col">機關徵才</span></td>
+                    <td class="e" data-th="標題"><span class="table-col"><a href="#">公告本分署「聘用研究員」職缺1名錄取人員</a></span></td>
+                    <td class="e" data-th="發布單位"><span class="table-col">人事室</span></td>
+                    <td class="e" data-th="發布日期"><span class="table-col">112-02-23</span></td>
+                    <td class="e" data-th="點閱人氣"><span class="table-col">93</span></td>
+                </tr>
+    
+            </tbody>
+        </table>
+    </div >
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
