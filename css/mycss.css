@@ -1,0 +1,45 @@
+:root{
+    --icystone01: #A6C2CE;    --mangodream01:#ffe083;
+    --icystone02: #9C8F96;    --mangodream02:#e99a24;
+    --icystone03: #EBC57C;    --mangodream03:#2b3c1a;
+    --icystone04: #6B799E;    --mangodream04:#171516;
+
+    --pinkpowders01:#ece4e2;  --coolchameleon01:#d9cfe7;
+    --pinkpowders02:#fcd3d1;  --coolchameleon02:#a8bcba;
+    --pinkpowders03:#fcdff3;  --coolchameleon03:#acc66d;
+    --pinkpowders04:#fe929f;  --coolchameleon04:#50697d; 
+
+    --corkcrowd01:#b98d72;
+    --corkcrowd02:#ae4951;
+    --corkcrowd03:#57233a;
+    --corkcrowd04:#161b1f;
+
+    --frame: #3D313F;
+    --wordbgc:#caffca;
+    --antiwhite:#ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.demo{
+
+            border: 2px solid var(--icystone02);
+            padding: 25px;
+            margin: 25px;
+            border-radius: 10px;
+            box-sizing: border-box;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.TC-700{
+    font-weight: 700;
+}
+.TC-900{
+    font-weight: 900;
+}
